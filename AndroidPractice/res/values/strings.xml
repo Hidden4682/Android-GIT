@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndroidPracticeActivity!</string>
+    <string name="app_name">AndroidPractice</string>
+    <string name="login">Login</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="apellido">Apellido</string>
+    <string name="edad">Edad</string>
+    <string name="sexo">Sexo</string>
+    <string name="telefono">Telefono</string>
+    <string name="celular">Celular</string>
+    <string name="direccion">Direccion</string>
+    <string name="pass">Pass</string>
+    <string name="confirm_pass">Confirm Pass</string>
+    <string name="guardar">Guardar</string>
+    <string name="atras">Atras</string>
+    
+
+</resources>

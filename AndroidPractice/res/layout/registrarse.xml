@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            style="@style/stile_layouts"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/stile_textviews_sin"
+                android:text="@string/registrarse"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/linearLayout1" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/stile_textviews"
+                android:text="@string/login" />
+            
+            <EditText
+                android:id="@+id/editText_login"
+                style="@style/stile_edittext"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/LinearLayout01" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/stile_textviews"
+                android:text="@string/apellido" />
+
+            <EditText
+                android:id="@+id/editText_apellidos"
+                style="@style/stile_edittext"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/LinearLayout02" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/stile_textviews"
+                android:text="@string/edad" />
+
+            <EditText
+                android:id="@+id/editText_edad"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout04"
+            style="@style/stile_layouts"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/stile_textviews"
+                android:text="@string/telefono" />
+
+            <EditText
+                android:id="@+id/editText_telefono"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/celular" />
+
+            <EditText
+                android:id="@+id/EditText_celular"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout05"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/LinearLayout04" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/stile_textviews"
+                android:text="@string/direccion" />
+
+            <EditText
+                android:id="@+id/editText_direccion"
+                style="@style/stile_edittext"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/LinearLayout05" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/stile_textviews"
+                android:text="@string/pass" />
+
+            <EditText
+                android:id="@+id/editText_pass"
+                style="@style/stile_edittext"
+                android:ems="10"
+                android:inputType="textPassword" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout07"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/LinearLayout06" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/stile_textviews"
+                android:text="@string/confirm_pass" />
+
+            <EditText
+                android:id="@+id/editText_confirm"
+                style="@style/stile_edittext"
+                android:ems="10"
+                android:inputType="textPassword" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout09"
+            style="@style/stile_layouts"
+            android:layout_below="@+id/LinearLayout07"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/stile_button"
+                android:onClick="guardar"
+                android:text="@string/guardar" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/stile_button"
+                android:onClick="atras"
+                android:text="@string/atras" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
